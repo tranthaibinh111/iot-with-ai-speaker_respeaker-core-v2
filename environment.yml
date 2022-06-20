@@ -1,0 +1,21 @@
+name: speech_recognize_core
+channels:
+  - defaults
+dependencies:
+  - python==3.9
+  - pip
+  - numpy==1.22.3
+  - scipy
+  - scikit-learn
+  - pip:
+    - PyObjC
+    # Librosa
+    - librosa==0.9.1
+    # PyAudio
+    # http://people.csail.mit.edu/hubert/pyaudio/
+    # Required MacOS: brew install portaudio
+    - PyAudio==0.2.11
+    # Playsound
+    - playsound==1.3.0
+    # Requests
+    - requests==2.27.1
